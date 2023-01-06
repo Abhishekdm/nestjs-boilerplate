@@ -1,0 +1,10 @@
+import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
+import { {{properCase name}}sService } from './{{lowerCase name}}s.service'; 
+import { Create{{properCase name}}Dto } from './dto/create-{{lowerCase name}}.dto'; 
+import { {{properCase name}} } from './schemas/{{lowerCase name}}.schema';
+
+@Controller("{{lowerCase name}}s")
+export class {{properCase name}}sController {
+    constructor(private readonly {{lowerCase name}}sService: {{properCase name}}sService) {}
+
+}
